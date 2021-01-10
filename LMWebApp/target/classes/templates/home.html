@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+   <form th:action="@{/upload}"
+    th:object="${user}" method="post"
+    enctype="multipart/form-data"
+    >
+    <div>
+     
+    <label>Photos: </label>
+    <input type="file" name="image" max-size="2000" accept="image/png, image/jpeg"/>
+	<input type="submit" value="Submit" onClick="location.href='/upload'">
+    </div>
+</form>
+</body>
